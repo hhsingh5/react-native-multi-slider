@@ -454,6 +454,7 @@ export default class MultiSlider extends React.Component {
     const body = (
       <React.Fragment>
         <View style={[styles.fullTrack, { width: sliderLength }]}>
+      {this.props.showoverlay && <View style={{ width: 0, height: 0, borderRightWidth: windowWidth - 27.5, borderTopWidth: 70, borderStyle: 'solid', backgroundColor: 'transparent', borderRightColor: 'transparent', borderTopColor: 'white', zIndex: 10, position: 'absolute', top: -70 }}></View>}
           <View
             style={[
               styles.track,
